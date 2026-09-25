@@ -1,0 +1,26 @@
+{
+  "name": "saucedemo-enterprise-playwright",
+  "version": "1.0.0",
+  "description": "Enterprise-level Playwright TypeScript automation framework for SauceDemo with clean POM, locator maintenance, and self-healing selectors.",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "openai": "^7.8.0",
+    "prettier": "^3.5.3"
+  }
+}
