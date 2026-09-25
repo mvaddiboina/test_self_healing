@@ -20,5 +20,10 @@ export const LoginLocators = {
     description: 'Login error message',
     primary: '[data-test="error"]',
     fallbacks: ['.error-message-container h3']
+  },
+  error1: {
+    description: 'Login error message',
+    primary: '[data-test="error"]',
+    fallbacks: ['.error-message-container h3']
   }
 } satisfies Record<string, LocatorDefinition>;
